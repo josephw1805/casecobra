@@ -16,7 +16,7 @@ export default function Home() {
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
                 <Image
-                  src="https://utfs.io/f/67a4abdd-c6ba-4353-add2-0d8c99d29745-y7xt7g.png"
+                  src="/snake-1.png"
                   alt="snake with pone"
                   className="w-full"
                   priority
