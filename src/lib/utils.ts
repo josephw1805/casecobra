@@ -41,5 +41,6 @@ export function constructMetadata({
       creator: "@josephwengwdia",
     },
     icons,
+    metadataBase: new URL("https://casecobra-kappa-six.vercel.app/"),
   };
 }

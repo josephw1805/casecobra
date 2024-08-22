@@ -106,7 +106,7 @@ const Page = async () => {
             </Card>
           </div>
           <h1 className="text-4xl font-bold tracking-tight">Incoming orders</h1>
-          <DataTable columns={columns} data={orders} />
+          <DataTable columns={columns} data={orders} searchKey="id" />
         </div>
       </div>
     </div>

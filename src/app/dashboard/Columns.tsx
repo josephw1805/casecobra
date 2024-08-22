@@ -8,7 +8,7 @@ import StatusDropdown from "./StatusDropdown";
 export type Order = {
   id: string;
   user: User;
-  shippingAddress: ShippingAddress;
+  shippingAddress: ShippingAddress | null;
   status: OrderStatus;
   createdAt: Date;
   amount: number;
@@ -20,7 +20,7 @@ export const columns: ColumnDef<Order>[] = [
     header: "Customer",
     cell: ({ row }) => (
       <>
-        <div className="font-medium">{row.original.shippingAddress.name}</div>
+        <div className="font-medium">{row.original.shippingAddress?.name}</div>
         <div className="hidden text-sm text-muted-foreground md:inline">
           {row.original.user.email}
         </div>
