@@ -8,13 +8,11 @@ import { ourFileRouter } from "./api/uploadthing/core";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { Toaster } from "@/components/ui/toaster";
 import Providers from "@/components/Providers";
+import { constructMetadata } from "@/lib/utils";
 
 const recursive = Recursive({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Case Cobra | Phone Case",
-  description: "Upload your image to create a phone case",
-};
+export const metadata: Metadata = constructMetadata();
 
 export default function RootLayout({
   children,
